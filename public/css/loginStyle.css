@@ -1,0 +1,44 @@
+  /*---------------------------REGISTER FORM-----------------------*/
+
+.page-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2% 2%;
+    background-color: whitesmoke;
+    border-bottom:1px solid black;
+  }
+
+.contact__form{
+    display : felx;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color : whitesmoke;
+    margin:5% 25%;
+    padding: 3% 0;
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+
+.contact__form-input{
+  margin: 3% auto;
+}
+
+.contact__form-label{
+  margin : 2% 2%;
+}
+
+.submitBtn{
+  padding: 1% 2%;
+}
+
+.continue{
+  align-items: center;
+  background-color : whitesmoke;
+  margin:5% 25%;
+  padding: 3% 0;
+  border: 1px solid black;
+  border-radius: 3%;  
+  display: flex;
+  justify-content: center;
+}

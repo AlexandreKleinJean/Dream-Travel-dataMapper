@@ -1,0 +1,60 @@
+  /*---------------------------MODIFY TEAM-----------------------*/
+
+  .page-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2% 2%;
+    background-color: whitesmoke;
+    border-bottom:1px solid black;
+  }
+
+.page-title2{
+  text-align: center;
+  font-size: 2rem;
+  padding: 2% 2%;
+  margin: 0 25%;
+  background-color: rgb(194, 10, 10);
+  border-bottom:1px solid black;
+}
+
+.modifyTeam__form{
+    display : felx;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color : whitesmoke;
+    margin:5% 15%;
+    padding: 3% 0;
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+
+.modifyTeam__form-input{
+  padding: 5% 2%;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.modifyTeam__form-label{
+  font-size: 2rem;
+
+  padding: 5% 10%;
+  margin : 2% 2%;
+}
+
+#id, #age, #statut, #name{
+  margin-bottom: 10%;
+}
+
+.modifyTeamBtn{
+  color: black;
+  padding: 2% 3%;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+.modifyTeamBtn:hover{
+  background-color: white;
+}

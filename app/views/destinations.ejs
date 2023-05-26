@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/destinationsStyle.css">
+
+<h1 class="destination__title">Destination</h1>
+
+<% for(let flight of allFlights) { %>
+
+    <article class="destination__article">
+        <h1><%= flight.destination %></h1>
+    </article>
+
+    <% } %>
+
+<%- include('partials/footer') %>

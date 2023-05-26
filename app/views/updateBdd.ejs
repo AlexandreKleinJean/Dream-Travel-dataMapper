@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<head>
+    <link rel="stylesheet" href="/css/updateBddStyle.css">
+</head>
+<h1 class="page-title">Modify Team</h1>
+<h2 class="page-title2">Encore du travail sur la BDD</h2>
+  <div class="contact">
+    <form class="modifyTeam__form" method="post" action="/modifyTeam">
+        <div class="modifyTeam__form-input">
+
+            <label class ="modifyTeam__form-label" for="id">Team member id</label>
+            <input id="id" type="number" name="id" placeholder="0">
+
+            <label class ="modifyTeam__form-label" for="name">Team member name</label>
+            <input id="name" type="name" name="name" placeholder="Eric">
+
+            <label class ="modifyTeam__form-label" for="statut">Team member statut</label>
+            <input id="statut" type="name" name="statut" placeholder="commercial">
+
+            <label class ="modifyTeam__form-label" for="age">Team member age</label>
+            <input id="age" type="number" name="age" placeholder="42">
+        </div>
+        <div>
+            <button class="modifyTeamBtn" type="submit">Add team member</button>
+        </div>
+    </form>
+  </div>
