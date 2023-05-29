@@ -22,22 +22,12 @@
 /*-----HEADER IMG----------*/
 
 #header-banner{ 
-    background-image: url(../img/otherBanner.png);
+    background-image: url(../img/destination.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:80vh;
     color: white;
   }
-
-/*--------HEADER TEXT/FORM------*/
-
-.menu__text-title{
-      top: 40%;
-    }
-
-.header__form{
-    bottom: 40%;
-    }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 

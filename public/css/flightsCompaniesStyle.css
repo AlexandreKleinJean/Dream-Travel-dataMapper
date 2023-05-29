@@ -1,47 +1,51 @@
-/*---------------------------------------------------HEADER-----------------------------------------*/
+/*----------------------------------HEADER---------------------------*/
 
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-    color: whitesmoke;
-  }
+  color: rgb(99, 97, 97);
+  text-shadow: white 1px 0 10px;
+}
 
 .menu__item{
 
-    background-image: linear-gradient(to right,#3dabeb,#3dabeb 50%,white 50%);
-    }
+  background-image: linear-gradient(to right,rgb(167, 161, 161),rgb(167, 161, 161) 50%,whitesmoke 50%);
+  }
 
 .menu__item:before{ 
-    background: #3dabeb;
-    }
+  background: rgb(167, 161, 161);
+  }
 
 /*-----HEADER IMG----------*/
 
 #header-banner{ 
-    background-image: url(../img/hotels.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:80vh;
-    color: white;
-  }
+  background-image: url(../img/flights.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80vh;
+}
 
 /*--------HEADER TEXT/FORM------*/
 
+.menu__text-title{
+  color:whitesmoke
+  }
+
 .header__form{
-    bottom: 40%;
-    }
+  bottom: 40%;
+  }
 
 #btn{
-    background-color:#1c96dd;;
-    }
-    
+  background-color:rgb(129, 126, 126);
+  }
+  
 #btn:hover{
-    background-color: #3dabeb;
-    }
+  background-color: rgb(167, 161, 161);
+  }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 
-.hotel__title{
+.companies__title{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +55,7 @@
     background-color: whitesmoke;
     }
 
-.hotel__article{
+.companies__article__article{
     display:flex;
     justify-content: center;
     padding: 1% 2%;

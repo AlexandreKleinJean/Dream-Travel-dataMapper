@@ -1,43 +1,43 @@
-
 /*---------------------------------------------------HEADER-----------------------------------------*/
 
 /*-----------HEADER NAV----------*/
 
 #menu__logo{
-    font-size:1.5rem;
-    font-weight: bold;
-    color: #26860d;
-    padding: 1% 1%;
-    width: 40%;
-    text-align: center;
-    text-shadow: white 1px 0 10px;
+  color: #da5101;
+  text-shadow: white 1px 0 10px;
+}
+
+.menu__item{
+
+  background-image: linear-gradient(to right,#da5101,#da5101 50%,white 50%);
   }
-  
-  .menu__item{
-    color:black;
-    text-shadow: whitesmoke 1px 0 20px;
+
+.menu__item:before{ 
+  background: #da5101;
   }
-  
 
 /*-----HEADER IMG----------*/
 
 #header-banner{ 
-    background-image: url(../img/banner-jungle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:80vh;
-    color: white;
-  }
+  background-image: url(../img/destinations.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:80vh;
+}
 
 /*--------HEADER TEXT/FORM------*/
 
-.menu__text-title{
-      top: 40%;
-    }
-
 .header__form{
-    bottom: 40%;
-    }
+  bottom: 40%;
+  }
+
+#btn{
+  background-color:#db6927;
+  }
+  
+#btn:hover{
+  background-color: #e67c04;
+  }
 
 /*-----------------------------------------------------MAIN----------------------------------------------*/
 

@@ -55,6 +55,16 @@ const mainController = {
       }
     },
 
+    async flightsCompaniesList(req, res) {
+      try {
+        const allFlights = await dataMapper.showFlights();
+        res.render('flightsCompanies', {results:allFlights});
+      } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
+      }
+    },
+
     async hotelsList(req, res) {
       try {
         const allHotels = await dataMapper.showHotels();

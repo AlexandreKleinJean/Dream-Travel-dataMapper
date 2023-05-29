@@ -13,6 +13,8 @@ router.get("/destination/:id", mainController.clickedDestination)
 
 router.post("/destinations", mainController.budgetDestinationList)
 
+router.get("/flightCompanies", mainController.flightsCompaniesList)
+
 router.get("/hotels", mainController.hotelsList)
 
 module.exports = router;
