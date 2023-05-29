@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/hotelsStyle.css">
+
+<h1 class="hotel__title">Hotels</h1>
+
+<% for(let hotel of allHotels) { %>
+
+    <a class="hotel__article" href="/hotels/<%= hotel.id %>">
+        <h1><%= hotel.name %></h1>
+        <h2><%= hotel.destination %></h2>
+    </a>
+    <% } %>
+
+<%- include('partials/footer') %>

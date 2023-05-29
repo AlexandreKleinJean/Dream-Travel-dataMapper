@@ -21,28 +21,50 @@ const mainController = {
     },
 
     async destinationsList(req, res) {
-      res.locals.pageId = "flights"
             try {
               const allFlights = await dataMapper.showFlights();
-              res.render('destinations', {allFlights});
+              res.render('destinations', {results:allFlights});
             } catch (error) {
               console.error(error);
               res.status(500).send(`An error occured with the database :\n${error.message}`);
             }
     },
 
-    async destinations(req, res) {
-      res.locals.pageId = "flights"
+    async budgetDestinationList(req, res) {
+      const criterias = req.body
+      console.log(criterias)
       try {
-        const allFlights = await dataMapper.showFlights();
+        const searchResultsByCriterias = await dataMapper.budgetDestination(criterias);
+        console.log(searchResultsByCriterias)
+        res.render('destinations', {results:searchResultsByCriterias});
+      } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
+      }
+    },
 
-        console.log(allFlights)
-        res.render('flightsDestination', {allFlights});
+    async clickedDestination(req, res) {
+      const chosenDestination = req.params.id
+
+      try {
+        const oneFlight = await dataMapper.showDestination(chosenDestination);
+        res.render('destination', {oneFlight});
+      } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
+      }
+    },
+
+    async hotelsList(req, res) {
+      try {
+        const allHotels = await dataMapper.showHotels();
+        res.render('hotels', {allHotels});
       } catch (error) {
         console.error(error);
         res.status(500).send(`An error occured with the database :\n${error.message}`);
       }
 },
+
 }
 
 module.exports = mainController;

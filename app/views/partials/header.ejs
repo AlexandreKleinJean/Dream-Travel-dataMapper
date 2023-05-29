@@ -20,7 +20,7 @@
           </a>
         </div>   
         <div id="menu__items">
-              <a class="menu__item" href="flightsDestinations">Destination</a>
+              <a class="menu__item" href="/flightsDestinations">Destination</a>
               <a class="menu__item" href="/flightCompanies">Flight Companies</a>
               <a class="menu__item" href="/hotels">Hotels</a>
               <a class="menu__item" href="/contact">Contact</a>
@@ -30,8 +30,8 @@
         <div id="menu__text">
           <h1 class="menu__text-title">Enjoy your life</h1> 
         </div>
-        <form class="header__form">
-          <label for="destination"></label>
+        <form class="header__form" action="/destinations" method="post">
+          <label for="destination">I would love to go to</label>
           <select name="destination" id="destination">
             <option value="Thailand">Thailand</option>
             <option value="Costa Rica">Costa Rica</option>
@@ -40,7 +40,15 @@
             <option value="Indonesia">Indonesia</option>
             <option value="Guatemala">Guatemala</option>
           </select>
-          <button type="submit">Find my trip !</button>
+          <label for="budget">My flight budget max is</label>
+          <select name="budget" id="budget">
+            <option value="800">800</option>
+            <option value="900">900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+          </select>
+          <button type="submit">Find my flight !</button>
         </form>
       </section>
     </header>

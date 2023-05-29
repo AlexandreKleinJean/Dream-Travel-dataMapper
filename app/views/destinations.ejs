@@ -3,12 +3,11 @@
 
 <h1 class="destination__title">Destination</h1>
 
-<% for(let flight of allFlights) { %>
+<% for(let flight of results) { %>
 
-    <article class="destination__article">
+    <a class="destination__article" href="/destination/<%= flight.id %>">
         <h1><%= flight.destination %></h1>
-    </article>
-
+    </a>
     <% } %>
 
 <%- include('partials/footer') %>

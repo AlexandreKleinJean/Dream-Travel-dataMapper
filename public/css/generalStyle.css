@@ -149,3 +149,14 @@ background-image: linear-gradient(
     background-color: whitesmoke;
     border-radius: 5%;
   }
+
+/*-----------------------------------FOOTER------------------------*/
+
+.footer{
+ background-color: rgb(46, 117, 52);
+ height: 10vh;
+ margin-top: 5%;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
