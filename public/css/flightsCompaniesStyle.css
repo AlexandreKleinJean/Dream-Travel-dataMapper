@@ -28,7 +28,8 @@
 /*--------HEADER TEXT/FORM------*/
 
 .menu__text-title{
-  color:whitesmoke
+  color:whitesmoke;
+  text-shadow: black 1px 0 10px;
   }
 
 .header__form{

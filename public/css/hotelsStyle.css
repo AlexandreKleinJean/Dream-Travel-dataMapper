@@ -27,6 +27,12 @@
 
 /*--------HEADER TEXT/FORM------*/
 
+.menu__text-title{
+    bottom: 40%;
+    text-shadow: black 1px 0 10px;
+}
+
+
 .header__form{
     bottom: 40%;
     }

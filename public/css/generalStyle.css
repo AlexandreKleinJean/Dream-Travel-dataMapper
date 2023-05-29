@@ -152,13 +152,30 @@ background-image: linear-gradient(
     padding-left: 5%;
     color:black;
     text-align: center;
-    background-color: rgba(245, 248, 243, 0.6);
-    border-radius: 5%;
+    background-color: rgba(245, 248, 243, 0.8);
+    border-radius: 3%;
   }
 
-  #destination, #budget{
+#destination, #budget{
+    cursor: pointer;
+    outline: none;
+    padding: 1% 1%;
+    border: 1px solid #111;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
     margin:1% 2%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: whitesmoke;
   }
+
+.selectPlaceholder{
+  text-align: center;
+}
 
   #btn{
     margin:0 2%;

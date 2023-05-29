@@ -17,4 +17,6 @@ router.get("/flightCompanies", mainController.flightsCompaniesList)
 
 router.get("/hotels", mainController.hotelsList)
 
+router.get("/contact", mainController.contact)
+
 module.exports = router;

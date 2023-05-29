@@ -73,7 +73,11 @@ const mainController = {
         console.error(error);
         res.status(500).send(`An error occured with the database :\n${error.message}`);
       }
-},
+    },
+
+    contact(req, res) {
+        res.render('contact');
+    }
 
 }
 
