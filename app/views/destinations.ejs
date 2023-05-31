@@ -1,12 +1,12 @@
 <%- include('partials/header') %>
 <link rel="stylesheet" href="/css/destinationsStyle.css">
 
-<h1 class="destination__title">Destination</h1>
+<h1 class="destination__title">Destinations</h1>
 
-<% for(let flight of results) { %>
+<% for(let result of results) { %>
 
-    <a class="destination__article" href="/destination/<%= flight.id %>">
-        <h1><%= flight.destination %></h1>
+    <a class="destination__article" href="/destination/<%= result.destination %>">
+        <h1><%= result.destination %></h1>
     </a>
     <% } %>
 

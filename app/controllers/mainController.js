@@ -20,6 +20,16 @@ const mainController = {
         res.render("client")
     },
 
+    async flights(req, res) {
+      try {
+        const allFlights = await dataMapper.showFlights();
+        res.render('flights', {results:allFlights});
+      } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
+      }
+},
+
     async destinationsList(req, res) {
             try {
               const allFlights = await dataMapper.showFlights();
@@ -30,13 +40,13 @@ const mainController = {
             }
     },
 
-    async budgetDestinationList(req, res) {
-      const criterias = req.body
-      console.log(criterias)
+    async budgetDestinationsList(req, res) {
+      const userCriterias = req.body
+      console.log(userCriterias)
       try {
-        const searchResultsByCriterias = await dataMapper.budgetDestination(criterias);
-        console.log(searchResultsByCriterias)
-        res.render('destinations', {results:searchResultsByCriterias});
+        const searchResults = await dataMapper.budgetDestination(userCriterias);
+        console.log(searchResults)
+        res.render('flights', {results:searchResults});
       } catch (error) {
         console.error(error);
         res.status(500).send(`An error occured with the database :\n${error.message}`);
@@ -45,10 +55,21 @@ const mainController = {
 
     async clickedDestination(req, res) {
       const chosenDestination = req.params.id
-
       try {
         const oneFlight = await dataMapper.showDestination(chosenDestination);
+        console.log(oneFlight)
         res.render('destination', {oneFlight});
+      } catch (error) {
+        console.error(error);
+        res.status(500).send(`An error occured with the database :\n${error.message}`);
+      }
+    },
+
+    async flightsDestinationsList(req, res) {
+      try {
+        const allDestinations = await dataMapper.showDestinations();
+        console.log(allDestinations)
+        res.render('destinations', {results:allDestinations});
       } catch (error) {
         console.error(error);
         res.status(500).send(`An error occured with the database :\n${error.message}`);
@@ -57,7 +78,7 @@ const mainController = {
 
     async flightsCompaniesList(req, res) {
       try {
-        const allFlights = await dataMapper.showFlights();
+        const allFlights = await dataMapper.showCompanies();
         res.render('flightsCompanies', {results:allFlights});
       } catch (error) {
         console.error(error);
